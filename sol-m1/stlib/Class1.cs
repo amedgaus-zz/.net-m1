@@ -6,7 +6,7 @@ namespace stlib
     {
         public static string FormatGreetings(this string Input)
         {
-            string formatted = $"Hello, {Input}!";
+            string formatted = $"{DateTime.Now.ToString("h:mm:ss tt") } Hello, {Input}!";
             
             return formatted;
         }
