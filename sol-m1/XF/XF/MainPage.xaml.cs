@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using stlib;
 
 namespace XF
 {
@@ -21,7 +22,7 @@ namespace XF
         {
             var text = ((Entry)sender).Text; //cast sender to access the properties of the Entry
             
-            MyText.Text = $"Hello, {text}!";
+            MyText.Text = FormatterLibrary.FormatGreetings(text);
         }
     }
 }
