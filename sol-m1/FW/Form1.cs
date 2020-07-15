@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using stlib;
 
 namespace FW
 {
@@ -20,8 +21,8 @@ namespace FW
         private void Button1_Click(object sender, EventArgs e)
         {
             var name = this.textBox1.Text;
-
-            MessageBox.Show($"Hello, {name}!");
+            string Output = FormatterLibrary.FormatGreetings(name);
+            MessageBox.Show(Output);
         }
     }
 }

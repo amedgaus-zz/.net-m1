@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\stlib\stlib.csproj">
+      <Project>{6c25c533-e7b4-4ed0-8aa4-dd8f59a7e4a2}</Project>
+      <Name>stlib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
