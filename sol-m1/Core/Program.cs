@@ -1,4 +1,5 @@
 ﻿using System;
+using stlib;
 
 namespace Core
 {
@@ -6,7 +7,7 @@ namespace Core
     {
         static void Main(string[] args)
         {
-            if (args.Length > 0) Console.WriteLine($"Hello, {args[0]}!");
+            if (args.Length > 0) Console.WriteLine(FormatterLibrary.FormatGreetings(args[0]));
         }
     }
 }
